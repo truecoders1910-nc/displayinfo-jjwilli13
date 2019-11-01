@@ -35,21 +35,31 @@ namespace DisplayInfo
             Console.WriteLine($"Hello, {firstName} {lastName}!");
 
 
-            if (favNum >= 10)
+            if (favNum > 10)
 
             {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine($"Your favorite number is {favNum}!");
+
+             Console.ForegroundColor = ConsoleColor.Green;
+             Console.WriteLine($"Your favorite number is {favNum}!");
 
             }
 
-            if (favNum <= 5)
+            if (favNum < 5)
 
             {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Your favorite number is {favNum}!");
+             
+             Console.ForegroundColor = ConsoleColor.Red;
+             Console.WriteLine($"Your favorite number is {favNum}!");
 
             }
+
+            else if (favNum == 5 || favNum <= 10)
+
+            {
+  
+             Console.WriteLine($"Your favorite number is {favNum}!");
+
+            } 
 
             Console.ResetColor();
 
